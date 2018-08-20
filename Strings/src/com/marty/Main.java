@@ -29,6 +29,6 @@ public class Main {
         int myInt = 50;
         lastString = lastString + myInt;
         System.out.println(lastString);
-        
+
     }
 }
