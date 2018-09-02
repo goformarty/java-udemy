@@ -8,7 +8,7 @@ public class Main {
         System.out.println(getLargestPrime(3));
         System.out.println(getLargestPrime(17));
         System.out.println(getLargestPrime(22));
-        
+
         System.out.println(getLargestPrime2(8));
         System.out.println(getLargestPrime2(22));
 
@@ -46,7 +46,7 @@ public class Main {
         if (num < 2) return -1;
 
         for (var i = 2; i < num; i++) {
-            while (num % i == 0 && num != i) {
+            while ((num % i == 0) && (num != i)) {
                 num /= i;
             }
         }
