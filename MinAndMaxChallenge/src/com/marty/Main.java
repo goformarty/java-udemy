@@ -20,13 +20,22 @@ public class Main {
 
         int min = 0;
         int max = 0;
+        boolean isFirstNumber = true;
 
         while(true) {
             System.out.println("Enter your number");
             boolean hasNextInt = scanner.hasNextInt();
 
             if(hasNextInt) {
+
                 int currentNum = scanner.nextInt();
+
+                if(isFirstNumber) {
+                    isFirstNumber = false;
+                    min = currentNum;
+                    max = currentNum;
+                }
+
                 if(currentNum < min) {
                     min = currentNum;
                 }
