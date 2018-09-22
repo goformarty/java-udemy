@@ -33,7 +33,7 @@ public class Main {
             System.out.println("It's not a number");
 
         }
-        
+
         scanner.close();
     }
 }
